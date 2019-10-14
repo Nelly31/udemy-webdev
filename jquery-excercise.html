@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jquery Excercise</title>
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div>Div 1</div>
+  <div class="highlight">Div 2</div>
+  <div id="third">Div 3</div>
+  <div class="highlight">Div 4</div>
+
+  <script>
+    // select all div and change background
+    $('div').css({'background-color': 'rgb(100,0,70)'})
+    // select all div's with class highlight and change font size
+    $('div.highlight').css({'font-size': '50px'})
+    // select id third and add border
+    $('#third').css({'border': 'rgb(20,50,80) 2px solid'})
+    // select first div and change font size
+    $('div:first-of-type').css({'color': 'white'})
+  </script>
+</body>
+</html>
